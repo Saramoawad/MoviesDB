@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moviedb</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+ 
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./imgs/logo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Movies
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Pupular</a></li>
+                    <li><a class="dropdown-item" href="#">Now Playing</a></li>
+                    <li><a class="dropdown-item" href="#">Up coming</a></li>
+                    <li><a class="dropdown-item" href="#">Top rated</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   TVShows
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Pupular</a></li>
+                    <li><a class="dropdown-item" href="#">Airing today</a></li>
+                    <li><a class="dropdown-item" href="#">On TV</a></li>
+                    <li><a class="dropdown-item" href="#">Top rated</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    People
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./people.html">Pupular people</a></li>
+                    
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Discussions</a></li>
+                    <li><a class="dropdown-item" href="#">Aleaderboard</a></li>
+                    <li><a class="dropdown-item" href="#">Support</a></li>
+                    <li><a class="dropdown-item" href="#">Api</a></li>
+                  </ul>
+                </div>
+                
+              </li>
+             
+             
+             
+            </ul>
+            <ul class="nav-icon">
+                <li><a href=""><i class="fa-solid fa-plus"></i> </a></li>
+                <li><button class="btn">EN</button></li>
+                <li><a href=""><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass lens"></i></a></li>
+            </ul>
+           
+          </div>
+        </div>
+    </nav>
+    <!-- search -->
+     <section class="search">
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        <p class="d-inline text-secondary">Search for a movie, tv show, person...</p>
+     </section>
+    <!-- header -->
+    <header>
+        <div class="cover">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+        </div>
+        <div class="layer"></div>
+        <div class="content">
+            <h1>That's a <br> Wrap 2024</h1>
+            <p>The best (and worst) of the year from TMDB.</p>
+            <button class="btn rounded-5">check it out <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </header>
+    <!-- trending -->
+     <main class="container">
+        <section class="trending">
+                <h2>Trending</h2>
+                
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Today</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">This Week</button>
+                    </li>
+                   
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+                        <div class="row" id="trendDay">
+                            <!-- <div class="col-xl-2">
+                                <div class="card">
+                                    <h3>title</h3>
+                                    <p>lorem</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                      <div class="row" id="trendWeak">
+                        <!-- <div class="col-xl-2">
+                            <div class="card">
+                                <h3>title</h3>
+                                <p>lorem</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    </div>
+                </div>
+                <p><a href="/trending.html" class="d-block showmore">SHOW MORE <i class="fa-solid fa-arrow-right"></i> </a> </p>
+
+            
+
+        </section>
+      </main>
+    <!-- popular -->
+
+    <section class="container">
+      <section class="pupular">
+              <h2>Pupular</h2>
+                      <div class="row top" id="PupularTv">
+
+                          
+                      </div>
+
+                 <div class="puplayer"></div>
+                 
+              
+              <p><a href="/pupular.html" class="d-block showMore">SHOW MORE  <i class="fa-solid fa-arrow-right"></i></a></p>
+
+          
+
+      </section>
+    </section>
+
+    <!-- pupular people -->
+  <!-- footer -->
+   <footer>
+    <section class="small-container">
+      <section class="row">
+        <secttion class="col-xl-3">
+          <div class="footer-img"><img src="./imgs/footer.svg" alt=""></div>
+          <button class="btn">Hi saramoawad!</button>
+        </secttion>
+        <secttion class="col-xl-3">
+         <h3>the basics</h3>
+         <ul>
+          <li><a href="">About tmdb</a></li>
+          <li><a href="">contact us</a></li>
+          <li><a href="">support foru...</a></li>
+          <li><a href="">API</a></li>
+          <li><a href="">sestem status</a></li>
+          
+         </ul>
+         
+        </secttion>
+        <secttion class="col-xl-3">
+         <h3>get involved</h3>
+         <ul>
+          <li><a href="">contribution bi</a></li>
+          <li><a href="">add new movie</a></li>
+          <li><a href="">add new tv sh...</a></li>
+         </ul>
+          
+        </secttion>
+        <secttion class="col-xl-3">
+          <h3>community</h3>
+          <ul>
+            <li><a href="">guidelines</a></li>
+            <li><a href="">discussions</a></li>
+            <li><a href="">leaderboard</a></li>
+          </ul>
+         
+         
+        </secttion>
+      </section>
+    </section>
+   </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ----------------- -->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="./js/main.js"></script>
+
+
+
+</body>
+</html>
